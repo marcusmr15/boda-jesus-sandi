@@ -1,0 +1,36 @@
+/* ! VARIABLES */
+:root {
+    /* Google fonts */
+    --font-main: "Neuton", serif;
+    /* Color Palette */
+    --color-bg: salmon; 
+    --color-text: black; 
+    --color-frames: white;
+}
+
+html {
+    font-size: 100%; /* Default size: 16px */
+}
+
+body {
+    font-size: 1.875rem; /* 1.4 x 16px = 22.4px */
+    font-family: var(--font-main); /* Majority of text will have the gr font applied */
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.25;
+    text-align: center;
+}
+
+main {
+    padding: 1.25rem;
+}
+
+#countdownContainer {
+    border: 0.125rem solid var(--color-frames);
+    border-radius: 10px;
+    padding: 0.3125rem;
+    margin: 1.25rem 0.3125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
