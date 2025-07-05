@@ -3,9 +3,9 @@
     /* Google fonts */
     --font-main: "Neuton", serif;
     /* Color Palette */
-    --color-bg: salmon; 
+    --color-bg: bisque; 
     --color-text: black; 
-    --color-frames: white;
+    --color-frames: cadetBlue;
 }
 
 html {
@@ -25,6 +25,8 @@ main {
     padding: 1.25rem;
 }
 
+
+
 #countdownContainer {
     border: 0.125rem solid var(--color-frames);
     border-radius: 10px;
@@ -33,4 +35,34 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 2rem;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:azure;
+}
+
+footer {
+    background-color: #869197;
+    color: var(--color-bg);
+    font-family: var(--font-purple);
+    font-size: 50%;
+    padding: 1.875rem;
+    margin-top: 1.875rem;
+}
+
+img {
+    border-radius:  5px;
+    margin-top: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
