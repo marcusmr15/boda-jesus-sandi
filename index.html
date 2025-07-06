@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- * Google Fonts -->
-    <!-- Neuton -->
+    <!-- Neuton Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Great Vibes Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     
     <!-- * CSS Files -->
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" href="./assets/css/styles.css"/>
 
     <!-- * Favicon -->
-    <!-- ! The "?v=2" part at the end of the file path is to clear the cache from the browser for the favicon) -->
-    <!-- Relative path for local testing -->
+    <!-- ! The "?v=2" part at the end of the file path is to clear the browser cache for the favicon -->
+    <!-- // Local testing -->
     <link rel="icon" href="./assets/images/favicon/favicon-og-size.png?v=2" type="image/png">
-    <!-- Absolute paths (no '.') for deployed website -->
-    <link rel="icon" href="/assets/images/favicon/favicon-og-size.png?v=2" type="image/png">
-    <link rel="icon" href="/assets/images/favicon/favicon-og-size.ico?v=2">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon-180-size.png?v=2" type="image/png">
-    <!-- Favicon in root for Safari mobile -->
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Production -->
+    <link rel="icon" href="/assets/images/favicon/favicon-og-size.png?v=2" type="image/png" sizes="512x512">
+    <link rel="icon" href="/assets/images/favicon/favicon-og-size.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 
     <!-- * Day.js and plugin (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
@@ -34,74 +36,68 @@
 
 <body>
     <main>
-        <!-- TODO -->
-        <!-- <h1>Jesus & Sandi</h1> -->
-
         <figure>
             <img id="titleImg" src="./assets/images/title-image.png" alt="picture of Jesus & Sandi">
         </figure>
 
-        <figure>
+        <figure class="imgMargin">
             <img id="titleImg" src="./assets/images/forever-image.png" alt="picture of Jesus & Sandi">
         </figure>
 
-
-
         <!-- * Timer Countdown -->
         <fieldset id="countdownContainer">
-            <legend>Faltan</legend>
+            <legend class="timerFont">Empezamos En</legend>
             <!-- <div id="countdownTimer"></div> -->
             <div>
                 <p id="days"></p>
-                <p>Días</p>
+                <p class="timerFont">Días</p>
             </div>
             <div>
                 <p id="hours"></p>
-                <p>Hrs</p>
+                <p class="timerFont">Hrs</p>
             </div>
             <div>
                 <p id="minutes"></p>
-                <p>Mins</p>
+                <p class="timerFont">Mins</p>
             </div>
             <div>
                 <p id="seconds"></p>
-                <p>Secs</p>
+                <p class="timerFont">Secs</p>
             </div>
         </fieldset>
-   
-
-        <section>
-            <p>Acompañanos a celebrar este día tan especial!!</p>
-        </section>
 
         <section>
             <h2>¿Dónde?</h2>
             <figure id="where1">
-                <img id="gateImage" src="./assets/images/locations/map-church-image.png" alt="The venue's front gate at street-view.">
                 <div>
-                    <p><strong>Iglesia</strong>: Parroquia de los Sagrados Corazones</p>
-                    <p>Dirección: </p>
+                    <h3>Iglesia a las 17:00hrs</h3>
+                    <p>"Parroquia de los Sagrados Corazones"</p>
+                    <h3>Dirección</h3>
                     <a href="https://maps.app.goo.gl/sQs6uewCmkAfWMA2A" target="_blank">Sur 26 12, Agrícola Oriental, Iztacalco, 08500 Ciudad de México, CDMX</a>
                 </div>
+                <img id="gateImage" class="imgMargin" src="./assets/images/locations/map-church-image.png" alt="Google maps view of the church.">
             </figure>
-            <figure id="where1">
-                <img id="gateImage" src="./assets/images/locations/map-venue-image.png" alt="The venue's front gate at street-view.">
+            <hr>
+            <figure id="where1" class="imgMargin">
                 <div>
-                    <p><strong>Evento Principal</strong>: Salón de Eventos "Maru"</p>
-                    <p>Dirección: </p>
+                    <h3>Evento Principal</h3>
+                    <p>Salón de Eventos "Maru"</p>
+                    <h3>Dirección</h3>
                     <a href="https://maps.app.goo.gl/tpQPGkPJ5NG5VWXv8" target="_blank">Sur 18-B 43, Agrícola Oriental, Iztacalco, 08500 Ciudad de México, CDMX</a>
                 </div>
+                <img id="gateImage" class="imgMargin" src="./assets/images/locations/map-venue-image.png" alt="Google maps view of the main event's location.">
             </figure>
+        </section>
 
-         
+        <section>
+            <p class="timerFont">Gracias por seguir acompañándonos en cada etapa de nuestra historia 🌹</p>
         </section>
 
     </main>
 
     <footer>
-        <p>Esta invitación fue programada por</p>
-        <p>Marcos Muñoz</p>
-        <p>y Diseñada por Emma Rodriguez & Viridiana Muñoz</p>
+        <p>Programación por <strong>Marcos Muñoz Rodriguez</strong></p>
+        <p>Diseños y Logos por <b>Emma Rodriguez Maldonado</b>  & <b>Viridiana Muñoz Rodriguez</b></p>
         <p>Hecha con 🧡 </p>
     </footer>
 

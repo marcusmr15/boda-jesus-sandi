@@ -2,10 +2,12 @@
 :root {
     /* Google fonts */
     --font-main: "Neuton", serif;
+    --font-cursive: "Great Vibes", cursive;  
     /* Color Palette */
     --color-bg: bisque; 
     --color-text: black; 
-    --color-frames: cadetBlue;
+    --color-frames: rgb(83, 0, 0);
+    --color-text-footer: white; 
 }
 
 html {
@@ -14,7 +16,7 @@ html {
 
 body {
     font-size: 1.875rem; /* 1.4 x 16px = 22.4px */
-    font-family: var(--font-main); /* Majority of text will have the gr font applied */
+    font-family: var(--font-cursive); /* Majority of text will have the gr font applied */
     color: var(--color-text);
     background-color: var(--color-bg);
     line-height: 1.25;
@@ -25,11 +27,23 @@ main {
     padding: 1.25rem;
 }
 
+.timerFont {
+    font-family: var(--font-cursive);
+}
+
+h2, h3 {
+    font-family: var(--font-cursive);
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: var(--color-frames);
+}
 
 
 #countdownContainer {
-    border: 0.125rem solid var(--color-frames);
-    border-radius: 10px;
+    border: 0.1rem solid var(--color-frames);
+    font-family: var(--font-main);
+    border-right: none;
+    border-left: none;
     padding: 0.3125rem;
     margin: 1.25rem 0.3125rem;
     display: flex;
@@ -51,18 +65,35 @@ button {
 }
 
 footer {
-    background-color: #869197;
+    background-color: var(--color-frames);
     color: var(--color-bg);
-    font-family: var(--font-purple);
+    font-family: var(--font-main);
     font-size: 50%;
     padding: 1.875rem;
     margin-top: 1.875rem;
 }
 
 img {
-    border-radius:  5px;
-    margin-top: 1.5rem;
+    border-radius: 0.4rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.imgMargin {
+    margin-top: 1.25rem;
+}
+
+hr {
+    border: solid 0.1rem var(--color-frames);
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+section {
+    margin-top: 2rem;
+    font-family: var(--font-main);
+
 }
